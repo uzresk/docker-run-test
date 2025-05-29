@@ -8,7 +8,12 @@ jobs:
     steps:
       - name: Set up Docker
         uses: docker/setup-docker-action@v4
-      
+
+      - name: tag
+        run: |
+          docker pull hello-world:latest
+          docker tag hello-world:latest docker.io/liquibase/liquibase:4.32.0
+        
       - name: Run Hello World
         run: |
-          docker run hello-world:latest
+          docker run liquibase/liquibase:4.32.0

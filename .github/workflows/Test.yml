@@ -1,0 +1,14 @@
+name: Test
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Docker
+        uses: docker/setup-docker-action@v4
+      
+      - name: Run Hello World
+        run: |
+          docker run hello-world:latest

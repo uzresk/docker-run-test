@@ -22,4 +22,6 @@ jobs:
       
       - name: run docker build
         run: |
+          pwd
+          ls -lrt
           docker build ./Dockerfile

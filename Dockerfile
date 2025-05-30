@@ -1,1 +1,1 @@
-FROM liquibase/liquibase:4.32.0
+FROM liquibase/liquibase:9.99.0

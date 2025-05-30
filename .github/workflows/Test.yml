@@ -22,4 +22,4 @@ jobs:
       
       - name: run docker build
         run: |
-          docker build Dockerfile
+          docker build ./Dockerfile

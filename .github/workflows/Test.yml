@@ -12,14 +12,14 @@ jobs:
       - name: tag
         run: |
           docker pull hello-world:latest
-          docker tag hello-world:latest docker.io/liquibase/liquibase:4.32.0
+          docker tag hello-world:latest docker.io/liquibase/liquibase:9.99.0
         
       - name: Run Hello World
         run: |
-          docker run liquibase/liquibase:4.32.0
+          docker run liquibase/liquibase:9.99.0
 
       - uses: actions/checkout@v4
-      
+
       - name: run docker build
         run: |
           docker build .

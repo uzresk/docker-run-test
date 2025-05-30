@@ -17,3 +17,9 @@ jobs:
       - name: Run Hello World
         run: |
           docker run liquibase/liquibase:4.32.0
+
+      - uses: actions/checkout@v4
+      
+      - name: run docker build
+        run: |
+          docker build Dockerfile

@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: liquibaseを実行
-        uses: uzresk/docker-run-test/liquibase-github-actions/update@v4.32.0
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/github/workspace -w /github/workspace uzresk/liquibase/liquibase:4.32.0 update

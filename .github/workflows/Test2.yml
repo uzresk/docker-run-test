@@ -1,0 +1,10 @@
+name: Test2
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: liquibaseを実行
+        uses: liquibase-github-actions/update@v4.32.0

@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: liquibaseを実行
-        uses: liquibase-github-actions/update@v4.32.0
+        uses: uzresk/liquibase-github-actions/update@v4.32.0

@@ -18,5 +18,7 @@ jobs:
 
       - name: liquibaseを実行
         run: |
+          pwd
+          ls -lrt
           docker run --rm -v ${{ github.workspace }}:/github/workspace -w /github/workspace uzresk/liquibase/liquibase:4.32.0 update
 

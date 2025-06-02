@@ -23,5 +23,5 @@ jobs:
         run: |
           pwd
           ls -lrt
-          docker run --rm ghcr.io/uzresk/liquibase/liquibase:4.32.0 --help
+          docker run --rm docker pull ghcr.io/uzresk/docker-run-test/liquibase:4.32.0 --help
 
